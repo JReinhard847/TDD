@@ -2,10 +2,16 @@ package org.example;
 
 public class Fibonacci {
     public static int fib(int n) {
-        if(n<=1){
-            return n;
+        if (n == 0) {
+            return 0;
         }
-        return fib(n-1)+fib(n-2);
+        int small = 0;
+        int large = 1;
+        for (int i = 2; i <= n; i++) {
+            int temp = large;
+            large = small + large;
+            small = temp;
+        }
+        return large;
     }
-
 }
