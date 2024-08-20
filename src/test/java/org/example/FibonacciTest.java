@@ -52,13 +52,7 @@ class FibonacciTest {
     }
 
     @Test
-    void fibOverflow() {
-        //fib(46)=1836311903<2^32<fib(47)=2971215073
-        long fib46 = Fibonacci.fib(46);
-        assertEquals(1836311903, fib46);
-        long fib47 = Fibonacci.fib(47);
-        //overflowt zu -1323752223 obwohl long erst bei 2^64 overflowen sollte?
-        assertEquals(2971215073L, fib47);
+    void fib92ShouldBe7540113804746346429() {
+        assertEquals(7540113804746346429L, Fibonacci.fib(92));
     }
-
 }
