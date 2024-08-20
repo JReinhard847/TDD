@@ -40,4 +40,13 @@ class FibonacciTest {
     void fib6ShouldBe8() {
         assertEquals(8, Fibonacci.fib(6));
     }
+
+    @Test
+    void fib19ShouldBe4181() {
+        assertEquals(4181, Fibonacci.fib(19));
+    }
+    @Test
+    void fib41ShouldBe165580141 (){
+        assertEquals(165580141  ,Fibonacci.fib(41));
+    }
 }
