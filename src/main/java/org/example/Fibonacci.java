@@ -1,7 +1,9 @@
 package org.example;
 
+import java.math.BigInteger;
+
 public class Fibonacci {
-    public static int fib(int n) {
+    public static long fib(int n) {
         if (n == 0) {
             return 0;
         }
@@ -14,4 +16,6 @@ public class Fibonacci {
         }
         return large;
     }
+
+
 }
