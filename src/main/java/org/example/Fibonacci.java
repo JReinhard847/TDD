@@ -1,7 +1,5 @@
 package org.example;
 
-import java.math.BigInteger;
-
 public class Fibonacci {
     public static long fib(int n) {
         if (n == 0) {
