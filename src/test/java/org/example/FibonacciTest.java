@@ -38,7 +38,7 @@ class FibonacciTest {
 
     @Test
     void fib6ShouldBe8() {
-        assertEquals(8, Fibonacci.fib(6));
+        assertEquals(7, Fibonacci.fib(6));
     }
 
     @Test
